@@ -16,6 +16,8 @@ namespace ck.qiekn {
         private void Start() {
             gameOverCanvas.SetActive(false);
             Time.timeScale = 1f;
+            Application.targetFrameRate = 60;
+            QualitySettings.vSyncCount = 1;
         }
 
         public void GameOver() {
