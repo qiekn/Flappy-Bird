@@ -11,7 +11,7 @@ namespace ck.qiekn {
         }
 
         private void Update() {
-            if (Input.GetKey(KeyCode.Space)) {
+            if (Input.GetKey(KeyCode.Space) || Input.touchCount > 0) {
                 rb.linearVelocity = Vector2.up * velocity;
             }
         }
